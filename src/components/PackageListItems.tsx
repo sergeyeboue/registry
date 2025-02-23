@@ -6,10 +6,10 @@ interface PackageListItemsProps {
 }
 
 function PackageListItems({ pack }: PackageListItemsProps) {
-  const renderKeywords = (pack.keywords || []).map((keyword) => {
+  const renderKeywords = (pack.keywords || []).map((keyword, index) => {
     return (
       <div
-        key={keyword}
+        key={index}
         className="border py-0.5 px-1 text-xs bg-slate-200 rounded "
       >
         {keyword}

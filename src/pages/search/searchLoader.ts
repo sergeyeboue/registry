@@ -6,11 +6,13 @@ export interface searchLoaderResultat {
   searchResult: PackageSummary[];
 }
 
+interface SearchLoaderArgs {
+  request: Request;
+}
+
 export async function searchLoader({
   request,
-}: {
-  request: Request;
-}): Promise<searchLoaderResultat> {
+}: SearchLoaderArgs): Promise<searchLoaderResultat> {
   const { searchParams } = new URL(request.url);
   const term = searchParams.get("term");
   if (!term) {
