@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         loader: searchLoader,
       },
       {
-        path: "/packages/:name",
+        path: "/package/:name",
         element: <DetailsPage />,
       },
     ],
