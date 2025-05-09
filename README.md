@@ -19,6 +19,7 @@ Une application React + TypeScript qui simule le site [npmjs.com](https://www.np
 
 ## 🚀 Lancer le projet en local
 
+```bash
 git clone https://github.com/sergeyeboue/registry.git
 cd registry
 npm install
